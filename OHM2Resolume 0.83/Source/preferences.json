@@ -1,0 +1,18 @@
+{
+	"pattrstorage" : 	{
+		"name" : "storage",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"Dash" : [ 1 ],
+					"trigger::u663002972" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

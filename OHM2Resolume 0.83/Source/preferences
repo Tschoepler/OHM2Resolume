@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "storage">
+	<slot number = "1">
+		<pattr name = "Dash" value = "0" />
+		<patcher name = "trigger">
+			<pattr name = "u373005750" value = "-1" />
+		</patcher>
+	</slot>
+</pattrstorage>
+
