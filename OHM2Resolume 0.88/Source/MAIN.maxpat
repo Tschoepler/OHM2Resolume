@@ -135,7 +135,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -8682,7 +8681,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 946.0, 411.0, 71.0, 18.0 ],
-					"restore" : [ 3 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -9266,7 +9265,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.5, 1.0, 0.0, 0.0 ],
+					"bgcolor" : [ 0.5, 1.0, 0.0, 1.0 ],
 					"bgcolor2" : [ 0.619608, 0.905882, 0.74902, 1.0 ],
 					"fontface" : 2,
 					"fontname" : "Arial",
@@ -9277,8 +9276,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 36.0, 90.0, 192.0, 16.0 ],
-					"text" : "found: \"Ohm64 Control Surface\"",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
+					"presentation" : 1,
+					"presentation_rect" : [ 36.0, 90.0, 192.0, 16.0 ],
+					"text" : "no controller found..."
 				}
 
 			}
@@ -11749,6 +11749,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-2",
+									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -14682,7 +14683,7 @@
 									}
 ,
 									"text" : "pattrstorage",
-									"varname" : "u418005415"
+									"varname" : "u659000586"
 								}
 
 							}
@@ -18892,8 +18893,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 240.0, 264.0, 71.0, 15.0 ],
-													"text" : "0 1 1 0"
+													"patching_rect" : [ 240.0, 264.0, 71.0, 15.0 ]
 												}
 
 											}
@@ -18933,8 +18933,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 170.0, 226.0, 125.0, 15.0 ],
-													"text" : "\"Ohm64 Control Surface\""
+													"patching_rect" : [ 170.0, 226.0, 125.0, 15.0 ]
 												}
 
 											}
@@ -20587,10 +20586,24 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "lastOpenedComp",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "deck.maxpat",
 				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
 				"patcherrelativepath" : "../Source/OHM64 Externals/subpatches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lastOpenedCompPath",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
