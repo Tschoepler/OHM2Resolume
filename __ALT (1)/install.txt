@@ -1,0 +1,17 @@
+This only adresses the maxpat file. If you just want to use OHM2Resolume you should open the collective (mxf-file).
+
+put the "OHM64 Externals" folder into 
+on Windows: Program Files\Cycling '74\max 5.0\Cycling '74\
+on OS X: Applications\MAX5\Cycling '74\
+
+if you already have JASCH Objects installed you want to delete the files below from the folder "OHM64 Externals".
+
+on Windows:
+_.mxe
+idx.mxe
+toxine.mxe
+
+on OS X:
+_.mxo
+idx.mxo
+toxine.mxo

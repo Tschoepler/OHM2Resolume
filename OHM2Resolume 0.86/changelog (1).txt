@@ -1,0 +1,10 @@
+0.84
+
+- autoload externals from subfolders (no more copying files into your MAX search path needed)
+You can now open OHM2Resolume 0.84.maxpat with either MAX or MAX Runtime.
+- autoselect corresponding layer when a clip is triggered (OSC)
+- State of MIDI out port gets saved
+- "clear lights" doesn't produce coll error in MAX window anymore
+- fixed OHM64 not responding
+- added 16 decks support. just select deck with shift button down.
+- support for shifted knobs and faders with shift button down.

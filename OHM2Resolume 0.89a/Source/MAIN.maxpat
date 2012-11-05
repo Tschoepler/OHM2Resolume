@@ -2561,7 +2561,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 565.0, 311.0, 70.0, 21.0 ],
-					"text" : "btn 44 0"
+					"text" : "cc 12 56"
 				}
 
 			}
@@ -3547,7 +3547,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-11",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -4438,7 +4437,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-11",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -5329,7 +5327,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-11",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -6220,7 +6217,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-11",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -7111,7 +7107,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-11",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -8002,7 +7997,6 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-11",
-																	"int" : 1,
 																	"maxclass" : "gswitch2",
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
@@ -11231,7 +11225,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1216.0, 556.0, 71.0, 18.0 ],
-					"restore" : [ 2 ],
+					"restore" : [ 4 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -11249,7 +11243,7 @@
 					"framecolor" : [ 0.901961, 0.901961, 0.901961, 1.0 ],
 					"hint" : "Select a virtual MIDI port for controlling Avenue or Arena.",
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2", ",", "Ohm64 Control Surface", ",", "Ohm64 External" ],
+					"items" : [ "AU DLS Synth 1", ",", "Ohm64 Control Surface", ",", "Ohm64 External", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -14121,13 +14115,24 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 554.0, 563.0, 39.0, 32.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0 ],
+							"parameter_type" : 3,
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "gswitch2",
+							"parameter_longname" : "gswitch2"
+						}
+
+					}
+,
 					"varname" : "gswitch2"
 				}
 
@@ -14135,13 +14140,24 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-37",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 552.0, 639.0, 41.0, 32.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0 ],
+							"parameter_type" : 3,
+							"parameter_initial_enable" : 1,
+							"parameter_invisible" : 1,
+							"parameter_shortname" : "gswitch",
+							"parameter_longname" : "gswitch"
+						}
+
+					}
+,
 					"varname" : "gswitch"
 				}
 
@@ -16105,7 +16121,7 @@
 									}
 ,
 									"text" : "pattrstorage",
-									"varname" : "u404004407"
+									"varname" : "u593000619"
 								}
 
 							}
@@ -16250,7 +16266,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-14",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -17539,7 +17554,6 @@
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-22",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -17569,7 +17583,6 @@
 													"annotation" : "gswitch1",
 													"hint" : "gswitch1",
 													"id" : "obj-12",
-													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -21641,6 +21654,13 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
+			"obj-37" : [ "gswitch", "gswitch", 0 ],
+			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
+			"obj-38" : [ "gswitch2", "gswitch2", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "findLivid.js",
 				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.89a/Source/OHM64 Externals/js",
@@ -21824,10 +21844,24 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "lastOpenedComp",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.89a",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "deck.maxpat",
 				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.89a/Source/OHM64 Externals/subpatches",
 				"patcherrelativepath" : "../Source/OHM64 Externals/subpatches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lastOpenedCompPath",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.89a",
+				"patcherrelativepath" : "",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

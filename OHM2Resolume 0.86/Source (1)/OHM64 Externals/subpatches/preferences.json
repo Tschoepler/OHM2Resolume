@@ -1,0 +1,21 @@
+{
+	"pattrstorage" : 	{
+		"name" : "preferences",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"dashCorrect" : [ 0 ],
+					"MIDIout" : [ 2 ],
+					"AutoselectLayer" : [ 1 ],
+					"trigger::u811000569" : [ -1 ],
+					"Ohm2ResolumeHelp::Sequencer_OHM64::MIDIoutSequencer" : [ 3 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

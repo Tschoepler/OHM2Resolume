@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "storage">
+	<slot number = "1">
+		<pattr name = "dashCorrect" value = "0" />
+		<pattr name = "MIDIout" value = "3" />
+		<pattr name = "AutoselectLayer" value = "1" />
+		<patcher name = "trigger">
+			<pattr name = "u306000460" value = "-1" />
+		</patcher>
+	</slot>
+</pattrstorage>
+
