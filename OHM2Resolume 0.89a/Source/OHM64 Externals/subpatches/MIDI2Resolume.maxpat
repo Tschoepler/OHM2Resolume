@@ -39,7 +39,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 49.0, 377.27356, 56.0, 37.0 ],
-					"presentation_rect" : [ 50.0, 374.27356, 0.0, 0.0 ],
 					"text" : "channel 1"
 				}
 
@@ -54,7 +53,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 422.704773, 377.27356, 58.0, 18.0 ],
-					"presentation_rect" : [ 426.704773, 366.27356, 0.0, 0.0 ],
 					"text" : "channel 4"
 				}
 
@@ -69,7 +67,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 329.704773, 377.27356, 58.0, 18.0 ],
-					"presentation_rect" : [ 326.0, 370.27356, 0.0, 0.0 ],
 					"text" : "channel 3"
 				}
 

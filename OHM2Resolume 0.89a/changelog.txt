@@ -1,10 +1,11 @@
-0.84
+v0.89a
 
-- autoload externals from subfolders (no more copying files into your MAX search path needed)
-You can now open OHM2Resolume 0.84.maxpat with either MAX or MAX Runtime.
-- autoselect corresponding layer when a clip is triggered (OSC)
-- State of MIDI out port gets saved
-- "clear lights" doesn't produce coll error in MAX window anymore
-- fixed OHM64 not responding
-- added 16 decks support. just select deck with shift button down.
-- support for shifted knobs and faders with shift button down.
+Bug­fix: with new MAX 6 ver­sion column change led to stack overflow
+Lots of minor bugfixes
+Impro­ve­ments under the hood
+But­tons now blink twice as fast, this way it’s easier to fol­low when trig­ge­ring real fast ;] (I’ll imple­ment an inter­face for that soon)
+MIDI sequen­cer is now fully quan­ti­zed and lis­tens to Resync
+MIDI sequen­cer cat­ches MIDI input even if the first button/note is trig­ge­red slightly too soon
+MIDI sequen­cer used to record only till the last note played. Now it records the full length you set it to. Wea­t­her you’re trig­ge­ring real hard or it’s just a note in the beginning.
+BPM and Resync are now bidi­rec­tio­nal: Set the BPM or Resync in eit­her Reso­lume or the OHM2Resolume.
+Click Pause in Reso­lume and the patch will stop its metro­nome thus the but­tons stop blin­king indi­ca­ting Reso­lume is on hold.
