@@ -1,5 +1,6 @@
-v0.89a
+v0.89
 
+Added new OHM64.xml MIDI-Mapping file
 Bug­fix: with new MAX 6 ver­sion column change led to stack overflow
 Lots of minor bugfixes
 Impro­ve­ments under the hood
