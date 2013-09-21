@@ -6,9 +6,9 @@
 				"id" : 1,
 				"data" : 				{
 					"dashCorrect" : [ 0 ],
-					"MIDIout" : [ 3 ],
+					"MIDIout" : [ 2 ],
 					"AutoselectLayer" : [ 1 ],
-					"trigger::u649000608" : [ -1 ]
+					"trigger::u935000608" : [ -1 ]
 				}
 
 			}
