@@ -11728,7 +11728,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 251.0, 515.0, 526.0, 18.0 ],
-									"text" : "\"      <clip uniqueId=\\\"6632610\\\" layerIndex=\\\"5\\\" trackIndex=\\\"11\\\">\""
+									"text" : "\"      <clip uniqueId=\\\"120698\\\" layerIndex=\\\"5\\\" trackIndex=\\\"11\\\">\""
 								}
 
 							}
@@ -12426,7 +12426,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1216.0, 556.0, 71.0, 18.0 ],
-					"restore" : [ 2 ],
+					"restore" : [ 5 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -12444,7 +12444,7 @@
 					"framecolor" : [ 0.901961, 0.901961, 0.901961, 1.0 ],
 					"hint" : "Select a virtual MIDI port for controlling Avenue or Arena.",
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "Ohm64 Control Surface", ",", "Ohm64 External", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber AbletonLive", ",", "IAC-Treiber QuartzComposer", ",", "IAC-Treiber AbletonLive_Sync", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -12971,7 +12971,7 @@
 					"patching_rect" : [ 36.0, 90.0, 192.0, 16.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 36.0, 90.0, 192.0, 16.0 ],
-					"text" : "found: \"Ohm64 Control Surface\""
+					"text" : "no controller found..."
 				}
 
 			}
@@ -15448,12 +15448,12 @@
 					"patching_rect" : [ 554.0, 563.0, 39.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "gswitch2",
-							"parameter_longname" : "gswitch2",
-							"parameter_initial" : [ 0 ]
+							"parameter_longname" : "gswitch2"
 						}
 
 					}
@@ -15473,12 +15473,12 @@
 					"patching_rect" : [ 552.0, 639.0, 41.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0 ],
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_shortname" : "gswitch",
-							"parameter_longname" : "gswitch",
-							"parameter_initial" : [ 0 ]
+							"parameter_longname" : "gswitch"
 						}
 
 					}
@@ -17678,7 +17678,7 @@
 									}
 ,
 									"text" : "pattrstorage",
-									"varname" : "u644000610"
+									"varname" : "u095000610"
 								}
 
 							}
@@ -17831,12 +17831,12 @@
 													"patching_rect" : [ 145.0, 47.0, 39.0, 32.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_initial" : [ 0 ],
 															"parameter_type" : 3,
 															"parameter_initial_enable" : 1,
 															"parameter_invisible" : 1,
 															"parameter_shortname" : "gswitch1[1]",
-															"parameter_longname" : "gswitch1[1]",
-															"parameter_initial" : [ 0 ]
+															"parameter_longname" : "gswitch1[1]"
 														}
 
 													}
@@ -19099,12 +19099,12 @@
 													"patching_rect" : [ 44.0, 269.0, 39.0, 32.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_initial" : [ 0 ],
 															"parameter_type" : 3,
 															"parameter_initial_enable" : 1,
 															"parameter_invisible" : 1,
 															"parameter_shortname" : "gswitch2[1]",
-															"parameter_longname" : "gswitch2[3]",
-															"parameter_initial" : [ 0 ]
+															"parameter_longname" : "gswitch2[3]"
 														}
 
 													}
@@ -19140,12 +19140,12 @@
 													"patching_rect" : [ 44.0, 47.0, 39.0, 32.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
+															"parameter_initial" : [ 0 ],
 															"parameter_type" : 3,
 															"parameter_initial_enable" : 1,
 															"parameter_invisible" : 1,
 															"parameter_shortname" : "gswitch1",
-															"parameter_longname" : "gswitch1",
-															"parameter_initial" : [ 0 ]
+															"parameter_longname" : "gswitch1"
 														}
 
 													}
@@ -21691,8 +21691,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 240.0, 264.0, 71.0, 15.0 ],
-													"text" : "0 1 1 0"
+													"patching_rect" : [ 240.0, 264.0, 71.0, 15.0 ]
 												}
 
 											}
@@ -21732,8 +21731,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 170.0, 226.0, 125.0, 15.0 ],
-													"text" : "\"Ohm64 Control Surface\""
+													"patching_rect" : [ 170.0, 226.0, 125.0, 15.0 ]
 												}
 
 											}
@@ -23256,8 +23254,8 @@
  ],
 		"parameters" : 		{
 			"obj-37" : [ "gswitch", "gswitch", 0 ],
-			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
 			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
+			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
 			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
 			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ]
 		}
