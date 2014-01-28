@@ -1,0 +1,20 @@
+{
+	"pattrstorage" : 	{
+		"name" : "preferences",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"dashCorrect" : [ 0 ],
+					"MIDIout" : [ 6 ],
+					"AutoselectLayer" : [ 1 ],
+					"trigger::u117002828" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
