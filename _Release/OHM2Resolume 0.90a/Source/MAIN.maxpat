@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 4,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 0.0, 44.0, 600.0, 300.0 ],
@@ -176,8 +177,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 436.0, 44.0, 642.0, 782.0 ],
@@ -226,8 +228,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 58.0, 103.0, 856.0, 655.0 ],
@@ -1839,8 +1842,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 730.0, 370.0, 271.0, 303.0 ],
@@ -1862,7 +1866,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
@@ -2028,8 +2031,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 58.0, 103.0, 856.0, 655.0 ],
@@ -3057,7 +3061,7 @@
 					"fontsize" : 10.0,
 					"id" : "obj-27",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1109.0, 186.0, 56.0, 18.0 ],
@@ -3093,8 +3097,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 33.0, 127.0, 640.0, 428.0 ],
@@ -3441,8 +3446,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 811.0, 448.0, 640.0, 480.0 ],
@@ -3579,7 +3585,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 565.0, 276.0, 70.0, 21.0 ],
-					"text" : "btn 56 0"
+					"text" : "btn 44 0"
 				}
 
 			}
@@ -3638,8 +3644,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 391.0, 96.0, 1030.0, 643.0 ],
@@ -3782,8 +3789,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 553.0, 476.0, 640.0, 402.0 ],
@@ -4164,8 +4172,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 381.0, 625.0, 640.0, 423.0 ],
@@ -4668,8 +4677,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 419.0, 387.0, 116.0, 276.0 ],
@@ -4716,8 +4726,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 10.0, 307.0, 711.0, 311.0 ],
@@ -5606,8 +5617,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 578.0, 597.0, 685.0, 325.0 ],
@@ -6496,8 +6508,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 124.0, 97.0, 805.0, 350.0 ],
@@ -7386,8 +7399,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 63.0, 400.0, 662.0, 327.0 ],
@@ -8276,8 +8290,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 567.0, 180.0, 670.0, 317.0 ],
@@ -9166,8 +9181,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 801.0, 479.0, 669.0, 333.0 ],
@@ -10132,8 +10148,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 515.0, 691.0, 960.0, 345.0 ],
@@ -11729,7 +11746,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 251.0, 515.0, 526.0, 18.0 ],
-									"text" : "</composition>"
+									"text" : "\"      <clip uniqueId=\\\"6632610\\\" layerIndex=\\\"5\\\" trackIndex=\\\"11\\\">\""
 								}
 
 							}
@@ -12445,7 +12462,7 @@
 					"framecolor" : [ 0.901961, 0.901961, 0.901961, 1.0 ],
 					"hint" : "Select a virtual MIDI port for controlling Avenue or Arena.",
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber AbletonLive", ",", "IAC-Treiber QuartzComposer", ",", "IAC-Treiber AbletonLive_Sync", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber IAC-Bus 1", ",", "Netzwerk Regler", ",", "Ohm64 Control Surface", ",", "Ohm64 External", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -12597,8 +12614,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 539.0, 337.0, 407.0, 255.0 ],
@@ -12959,7 +12977,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.5, 1.0, 0.0, 1.0 ],
+					"bgcolor" : [ 0.5, 1.0, 0.0, 0.0 ],
 					"bgcolor2" : [ 0.619608, 0.905882, 0.74902, 1.0 ],
 					"fontface" : 2,
 					"fontname" : "Arial",
@@ -12970,9 +12988,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 36.0, 90.0, 192.0, 16.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 36.0, 90.0, 192.0, 16.0 ],
-					"text" : "no controller found..."
+					"text" : "found: \"Ohm64 Control Surface\"",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.0 ]
 				}
 
 			}
@@ -13018,8 +13035,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"openrect" : [ 48.0, 136.0, 140.0, 133.0 ],
@@ -13350,8 +13368,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 576.0, 290.0, 456.0, 393.0 ],
@@ -14311,8 +14330,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 477.0, 395.0, 623.0, 286.0 ],
@@ -15302,7 +15322,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 277.0, 254.0, 245.0, 29.0 ],
-					"text" : "OHM2Resolume 0.9 by Tschoepler x.x.2012\nDeveloped under the GNU General Public License",
+					"text" : "OHM2Resolume 0.9 by Tschoepler 11.8.2012\nDeveloped under the GNU General Public License",
 					"textcolor" : [ 0.6, 0.6, 0.6, 1.0 ]
 				}
 
@@ -15449,12 +15469,12 @@
 					"patching_rect" : [ 554.0, 563.0, 39.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
+							"parameter_longname" : "gswitch2",
+							"parameter_shortname" : "gswitch2",
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_shortname" : "gswitch2",
-							"parameter_longname" : "gswitch2"
+							"parameter_initial" : [ 0 ],
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -15474,12 +15494,12 @@
 					"patching_rect" : [ 552.0, 639.0, 41.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
+							"parameter_longname" : "gswitch",
+							"parameter_shortname" : "gswitch",
 							"parameter_type" : 3,
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1,
-							"parameter_shortname" : "gswitch",
-							"parameter_longname" : "gswitch"
+							"parameter_initial" : [ 0 ],
+							"parameter_invisible" : 1
 						}
 
 					}
@@ -15546,8 +15566,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 407.0, 173.0, 1040.0, 580.0 ],
@@ -15727,8 +15748,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 481.0, 608.0, 613.0, 155.0 ],
@@ -16426,8 +16448,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 220.0, 204.0, 340.0, 529.0 ],
@@ -16449,7 +16472,6 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -16562,8 +16584,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 693.0, 222.0, 378.0, 280.0 ],
@@ -17104,8 +17127,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 716.0, 477.0, 520.0, 440.0 ],
@@ -17482,8 +17506,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 451.0, 159.0, 380.0, 234.0 ],
@@ -17680,7 +17705,7 @@
 									}
 ,
 									"text" : "pattrstorage",
-									"varname" : "u935000608"
+									"varname" : "u415000633"
 								}
 
 							}
@@ -17771,8 +17796,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 109.0, 476.0, 418.0, 332.0 ],
@@ -17833,12 +17859,12 @@
 													"patching_rect" : [ 145.0, 47.0, 39.0, 32.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
-															"parameter_initial" : [ 0 ],
+															"parameter_longname" : "gswitch1[1]",
+															"parameter_shortname" : "gswitch1[1]",
 															"parameter_type" : 3,
 															"parameter_initial_enable" : 1,
-															"parameter_invisible" : 1,
-															"parameter_shortname" : "gswitch1[1]",
-															"parameter_longname" : "gswitch1[1]"
+															"parameter_initial" : [ 0 ],
+															"parameter_invisible" : 1
 														}
 
 													}
@@ -17888,8 +17914,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 619.0, 380.0, 435.0, 293.0 ],
@@ -18790,8 +18817,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 885.0, 394.0, 317.0, 246.0 ],
@@ -19053,8 +19081,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 429.0, 382.0, 556.0, 340.0 ],
@@ -19101,12 +19130,12 @@
 													"patching_rect" : [ 44.0, 269.0, 39.0, 32.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
-															"parameter_initial" : [ 0 ],
+															"parameter_longname" : "gswitch2[3]",
+															"parameter_shortname" : "gswitch2[1]",
 															"parameter_type" : 3,
 															"parameter_initial_enable" : 1,
-															"parameter_invisible" : 1,
-															"parameter_shortname" : "gswitch2[1]",
-															"parameter_longname" : "gswitch2[3]"
+															"parameter_initial" : [ 0 ],
+															"parameter_invisible" : 1
 														}
 
 													}
@@ -19142,12 +19171,12 @@
 													"patching_rect" : [ 44.0, 47.0, 39.0, 32.0 ],
 													"saved_attribute_attributes" : 													{
 														"valueof" : 														{
-															"parameter_initial" : [ 0 ],
+															"parameter_longname" : "gswitch1",
+															"parameter_shortname" : "gswitch1",
 															"parameter_type" : 3,
 															"parameter_initial_enable" : 1,
-															"parameter_invisible" : 1,
-															"parameter_shortname" : "gswitch1",
-															"parameter_longname" : "gswitch1"
+															"parameter_initial" : [ 0 ],
+															"parameter_invisible" : 1
 														}
 
 													}
@@ -20255,8 +20284,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 8
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 685.0, 337.0, 379.0, 290.0 ],
@@ -20306,8 +20336,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 358.0, 355.0, 309.0, 431.0 ],
@@ -20934,8 +20965,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 8
+											"minor" : 1,
+											"revision" : 4,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 740.0, 149.0, 507.0, 520.0 ],
@@ -21134,8 +21166,9 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 6,
-															"minor" : 0,
-															"revision" : 8
+															"minor" : 1,
+															"revision" : 4,
+															"architecture" : "x86"
 														}
 ,
 														"rect" : [ 678.0, 297.0, 243.0, 317.0 ],
@@ -21693,7 +21726,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 240.0, 264.0, 71.0, 15.0 ]
+													"patching_rect" : [ 240.0, 264.0, 71.0, 15.0 ],
+													"text" : "0 1 1 0"
 												}
 
 											}
@@ -21733,7 +21767,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 170.0, 226.0, 125.0, 15.0 ]
+													"patching_rect" : [ 170.0, 226.0, 125.0, 15.0 ],
+													"text" : "\"Ohm64 Control Surface\""
 												}
 
 											}
@@ -23255,206 +23290,222 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
+			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
 			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
-			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
+			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
+			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
 			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
-			"obj-37" : [ "gswitch", "gswitch", 0 ]
+			"obj-37" : [ "gswitch", "gswitch", 0 ],
+			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "findLivid.js",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/js",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/js",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/js",
+				"patcherrelativepath" : "./OHM64 Externals/js",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "li.getsetup.js",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/js",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/js",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/js",
+				"patcherrelativepath" : "./OHM64 Externals/js",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "thru.maxpat",
-				"bootpath" : "/Applications/Max6/patches/m4l-patches/Pluggo for Live resources/patches",
-				"patcherrelativepath" : "../../../../../../../../../Applications/Max6/patches/m4l-patches/Pluggo for Live resources/patches",
+				"bootpath" : "/Applications/Max6.1/patches/m4l-patches/Pluggo for Live resources/patches",
+				"patcherrelativepath" : "../../../../../../../../../../Applications/Max6.1/patches/m4l-patches/Pluggo for Live resources/patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "id2sysexOhm.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "changeany.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "zweifarbton_64x64.jpg",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/pic",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/pic",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Dashboard_plusMinus",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.9 pre-alpha/Source",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Dashboard_previewClips",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.9 pre-alpha/Source",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "lightDim.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shift.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "layers.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "layerStatus.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shiftToggle.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Cue_BeatRepeat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "toggleReset",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ohmbtn.png",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/pic",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/pic",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/pic",
+				"patcherrelativepath" : "./OHM64 Externals/pic",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.9 pre-alpha/Source",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source",
+				"patcherrelativepath" : ".",
 				"type" : "fold",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ohmbtn_sm.png",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/pic",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/pic",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/pic",
+				"patcherrelativepath" : "./OHM64 Externals/pic",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ohmbtn_tog.png",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/pic",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/pic",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/pic",
+				"patcherrelativepath" : "./OHM64 Externals/pic",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "preferences.json",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.9 pre-alpha",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MIDI2Resolume.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ColumnSwitch.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.9 pre-alpha/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sequencer_Help.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sequencer_OHM64.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Sequencer_voice.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "openTransport.maxpat",
+				"bootpath" : "/Applications/Max6.1/Cycling '74/max-help",
+				"patcherrelativepath" : "../../../../../../../../../../Applications/Max6.1/Cycling '74/max-help",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lastOpenedComp",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deck.maxpat",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/subpatches",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/subpatches",
+				"patcherrelativepath" : "./OHM64 Externals/subpatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "lastOpenedCompPath",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "li.UI.js",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.88/Source/OHM64 Externals/js",
-				"patcherrelativepath" : "../../OHM2Resolume 0.88/Source/OHM64 Externals/js",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/js",
+				"patcherrelativepath" : "./OHM64 Externals/js",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ohmbtn_switch.png",
-				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/OHM2Resolume 0.9 pre-alpha/Source/OHM64 Externals/pic",
-				"patcherrelativepath" : "../Source/OHM64 Externals/pic",
+				"bootpath" : "/Users/Dude/Documents/Google Drive/MAXMSP/OHM 64/OHM2Resolume/_Release/OHM2Resolume 0.90a/Source/OHM64 Externals/pic",
+				"patcherrelativepath" : "./OHM64 Externals/pic",
 				"type" : "PNG ",
 				"implicit" : 1
 			}

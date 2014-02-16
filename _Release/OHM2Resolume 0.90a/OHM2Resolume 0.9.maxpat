@@ -3,8 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 7
+			"minor" : 1,
+			"revision" : 4,
+			"architecture" : "x86"
 		}
 ,
 		"rect" : [ 10.0, 44.0, 400.0, 200.0 ],
@@ -71,7 +72,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 116.0, 93.0, 245.0, 29.0 ],
-					"text" : "OHM2Resolume 0.89a by Tschoepler 5.11.2012\nDeveloped under the GNU General Public License",
+					"text" : "OHM2Resolume 0.90 by Tschoepler 11.8.2013\nDeveloped under the GNU General Public License",
 					"textcolor" : [ 0.6, 0.6, 0.6, 1.0 ]
 				}
 
@@ -592,14 +593,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "zweifarbton_64x64.jpg",
-				"bootpath" : "/Users/Dude/Downloads/OHM2Resolume 0.89a",
-				"patcherrelativepath" : "",
-				"type" : "JPEG",
-				"implicit" : 1
-			}
- ]
+		"dependency_cache" : [  ]
 	}
 
 }
