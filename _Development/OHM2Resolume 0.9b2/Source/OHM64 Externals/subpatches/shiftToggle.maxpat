@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 7
+			"minor" : 1,
+			"revision" : 4,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 70.0, 1920.0, 1080.0 ],
+		"rect" : [ 0.0, 44.0, 1242.0, 834.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -28,6 +29,22 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 913.0, 204.0, 221.0, 29.0 ],
+					"presentation_rect" : [ 918.0, 206.0, 0.0, 0.0 ],
+					"text" : "Der Patch soll Cue-Trigger per OSC auslösen, anstatt über MIDI."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
@@ -36,7 +53,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 839.0, 212.0, 67.0, 18.0 ],
-					"presentation_rect" : [ 840.5, 207.0, 0.0, 0.0 ],
 					"text" : "s OSC_OUT"
 				}
 
@@ -52,21 +68,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 259.0, 67.0, 28.0, 18.0 ],
 					"text" : "thru"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.4, 1.0, 0.8, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 310.0, 29.0, 75.0, 18.0 ],
-					"text" : "r lightsUI_btn"
 				}
 
 			}
@@ -331,8 +332,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 7
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 101.0, 227.0, 461.0, 328.0 ],
@@ -1027,8 +1029,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 7
+							"minor" : 1,
+							"revision" : 4,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 640.0, 353.0, 431.0, 256.0 ],
@@ -1115,7 +1118,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 117.0, 142.0, 50.0, 16.0 ],
-									"text" : "5 1"
+									"text" : "0 1"
 								}
 
 							}
@@ -2279,16 +2282,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 501.5, 462.5, 501.5, 462.5 ],
 					"source" : [ "obj-78", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 319.5, 53.0, 268.5, 53.0 ],
-					"source" : [ "obj-8", 0 ]
 				}
 
 			}

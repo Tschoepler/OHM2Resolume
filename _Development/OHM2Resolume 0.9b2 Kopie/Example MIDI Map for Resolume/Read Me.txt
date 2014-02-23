@@ -1,4 +1,4 @@
-Open this file inside of Resolume Avenue via
+Open the file OHM64.xml inside of Resolume Avenue/Arena via
 
 > preferences > midi > loadÉ
 

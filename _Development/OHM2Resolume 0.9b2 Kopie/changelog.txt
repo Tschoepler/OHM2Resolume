@@ -1,2 +1,12 @@
-v0.9
+v0.9b2
 
+New: changed logo from zweifarbton to tschoepler
+New: updated some mouse-over hints
+New: added drop-down menu to select compositions from last opened folder
+Change: Sequencer listens to BPM changes and resync made from within Resolume
+Bugfix: Resolume sends BPM changes, resync and pause to OHM2Resolume via OSC
+Bugfix: change port and ip of OSC-connection
+Bugfix: buffer exceeds when recording with sequencer
+Bugfix: Fixed link in help section to „Dashboard correct“
+Bugfix: patcher would light up buttons but not pass MIDI from OHM64
+Clean up: Improved some unnecessary code
