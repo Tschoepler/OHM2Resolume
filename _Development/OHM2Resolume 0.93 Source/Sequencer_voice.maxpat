@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 7
+			"minor" : 1,
+			"revision" : 6,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 172.0, 227.0, 1440.0, 728.0 ],
+		"rect" : [ 0.0, 227.0, 1440.0, 728.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -229,7 +230,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1102.5, 652.119873, 50.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.718628, 17.119873, 58.0, 20.084347 ],
+					"presentation_rect" : [ 79.718628, 17.119873, 58.0, 20.084347 ],
 					"rounded" : 4.0,
 					"text" : "playback",
 					"texton" : "playback",
@@ -351,8 +352,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 7
+							"minor" : 1,
+							"revision" : 6,
+							"architecture" : "x86"
 						}
 ,
 						"rect" : [ 25.0, 69.0, 766.0, 770.0 ],
@@ -2465,7 +2467,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }
