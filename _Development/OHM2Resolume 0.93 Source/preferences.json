@@ -9,7 +9,7 @@
 					"MIDIout" : [ "from Max 1" ],
 					"AutoselectLayer" : [ 1 ],
 					"OSC_in" : [ 7001 ],
-					"trigger::u047000639" : [ -1 ]
+					"trigger::u657001324" : [ -1 ]
 				}
 
 			}

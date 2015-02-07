@@ -6,10 +6,10 @@
 				"id" : 1,
 				"data" : 				{
 					"dashCorrect" : [ 0 ],
-					"MIDIout" : [ "IAC-Treiber IAC-Bus 5" ],
+					"MIDIout" : [ "from Max Runtime 2" ],
 					"AutoselectLayer" : [ 1 ],
 					"OSC_in" : [ 7001 ],
-					"trigger::u190002349" : [ -1 ]
+					"trigger::u198002201" : [ -1 ]
 				}
 
 			}
