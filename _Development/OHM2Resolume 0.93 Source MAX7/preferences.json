@@ -1,0 +1,21 @@
+{
+	"pattrstorage" : 	{
+		"name" : "preferences",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"dashCorrect" : [ 0 ],
+					"MIDIout" : [ "IAC-Treiber IAC-Bus 1" ],
+					"AutoselectLayer" : [ 1 ],
+					"OSC_in" : [ 7001 ],
+					"trigger::u318002495" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
