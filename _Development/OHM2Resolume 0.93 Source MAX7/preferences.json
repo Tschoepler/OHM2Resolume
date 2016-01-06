@@ -9,7 +9,8 @@
 					"MIDIout" : [ "IAC-Treiber IAC-Bus 1" ],
 					"AutoselectLayer" : [ 1 ],
 					"OSC_in" : [ 7001 ],
-					"trigger::u318002495" : [ -1 ]
+					"LoadedComp" : [ 0 ],
+					"trigger::u220008110" : [ -1 ]
 				}
 
 			}
