@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 1372.0, 783.0 ],
+		"rect" : [ 34.0, 78.0, 1852.0, 1083.0 ],
 		"openrect" : [ 0.0, 0.0, 507.0, 313.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
@@ -66,7 +66,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 983.125, 401.0, 93.0, 20.0 ],
-					"restore" : [ 4 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -2748,7 +2748,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 224.0, 79.0, 640.0, 1105.0 ],
+						"rect" : [ 224.0, 79.0, 640.0, 1083.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -4353,7 +4353,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 33.0, 127.0, 640.0, 428.0 ],
+						"rect" : [ 34.0, 127.0, 640.0, 428.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -4402,7 +4402,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.0, 37.0, 33.0, 20.0 ],
+									"patching_rect" : [ 118.0, 37.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "r init"
 								}
@@ -4465,7 +4465,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 313.0, 272.0, 65.0, 20.0 ],
+									"patching_rect" : [ 313.0, 272.0, 65.0, 22.0 ],
 									"style" : "",
 									"text" : "r sendport"
 								}
@@ -4480,7 +4480,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 197.0, 274.0, 80.0, 20.0 ],
+									"patching_rect" : [ 197.0, 274.0, 80.0, 22.0 ],
 									"style" : "",
 									"text" : "r hostchange"
 								}
@@ -4495,7 +4495,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 152.0, 182.0, 33.0, 20.0 ],
+									"patching_rect" : [ 152.0, 182.0, 33.0, 22.0 ],
 									"style" : "",
 									"text" : "t b s"
 								}
@@ -4510,7 +4510,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "OSCTimeTag" ],
-									"patching_rect" : [ 152.0, 229.0, 143.0, 20.0 ],
+									"patching_rect" : [ 152.0, 229.0, 143.0, 22.0 ],
 									"style" : "",
 									"text" : "OpenSoundControl 2000"
 								}
@@ -4524,7 +4524,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 152.0, 319.0, 142.0, 20.0 ],
+									"patching_rect" : [ 152.0, 319.0, 142.0, 22.0 ],
 									"style" : "",
 									"text" : "udpsend 127.0.0.1 7000"
 								}
@@ -4874,7 +4874,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 504.0, 283.0, 70.0, 25.0 ],
 					"style" : "",
-					"text" : "btn 78 0",
+					"text" : "btn 72 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -13423,7 +13423,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage",
-									"varname" : "u715005389"
+									"varname" : "u868006233"
 								}
 
 							}
@@ -13585,6 +13585,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-14",
+													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -14928,6 +14929,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-22",
+													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -14971,6 +14973,7 @@
 													"annotation" : "gswitch1",
 													"hint" : "gswitch1",
 													"id" : "obj-12",
+													"int" : 1,
 													"maxclass" : "gswitch2",
 													"numinlets" : 2,
 													"numoutlets" : 2,
@@ -17231,15 +17234,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-37" : [ "gswitch", "gswitch", 0 ],
-			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
-			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
 			"obj-88" : [ "toggle", "toggle", 0 ],
-			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
+			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
 			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ],
+			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
+			"obj-37" : [ "gswitch", "gswitch", 0 ],
 			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
-			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
-			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ]
+			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
+			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
+			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -17345,9 +17348,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
+				"name" : "thru.pat",
+				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93 Source MAX7",
+				"type" : "maxb",
 				"implicit" : 1
 			}
 , 			{
@@ -17378,6 +17381,12 @@
 				"name" : "openTransport.maxpat",
 				"bootpath" : "C74:/help/max",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lastOpenedComp",
+				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93 Source MAX7",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
