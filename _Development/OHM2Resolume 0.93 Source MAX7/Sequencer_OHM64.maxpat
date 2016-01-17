@@ -11,7 +11,7 @@
 ,
 		"openrect" : [ 617.0, 66.0, 250.0, 200.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-		"bglocked" : 1,
+		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
 		"default_fontface" : 0,
@@ -129,7 +129,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 29.286499, 103.0, 74.713501, 15.0 ],
 					"style" : "",
-					"text" : "speed in BPM"
+					"text" : "speed in BPM",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -3756,7 +3757,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 86.0, 100.0, 56.0, 22.0 ],
 					"style" : "",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"tricolor" : [ 0.74902, 0.74902, 0.74902, 0.0 ]
 				}
 
@@ -3833,7 +3834,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 29.286499, 126.0, 65.0, 17.0 ],
 					"style" : "",
-					"text" : "loop (in bars)"
+					"text" : "loop (in bars)",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -3855,7 +3857,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 94.876862, 124.0, 27.0, 22.0 ],
 					"style" : "",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"tricolor" : [ 0.694118, 0.694118, 0.694118, 1.0 ]
 				}
 
@@ -3863,7 +3865,7 @@
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"fontname" : "Arial Black",
+					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"htricolor" : [ 0.87, 0.82, 0.24, 1.0 ],
 					"id" : "obj-1",
@@ -3873,13 +3875,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 682.5, 351.120544, 45.0, 23.0 ],
+					"patching_rect" : [ 682.5, 351.120544, 42.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 94.0, 50.0, 37.0, 23.0 ],
+					"presentation_rect" : [ 94.0, 50.0, 35.0, 20.0 ],
 					"style" : "",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.266667 ],
+					"textcolor" : [ 0.65098, 0.666667, 0.662745, 0.266667 ],
 					"triangle" : 0,
-					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ]
+					"tricolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 
 			}
@@ -3900,7 +3902,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 31.0, 41.0, 47.0, 57.0 ],
 					"style" : "",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ]
 				}
@@ -3954,7 +3956,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 66.0, 50.0, 43.0, 29.0 ],
 					"style" : "",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"triangle" : 0,
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ]
 				}
@@ -4021,7 +4023,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
-					"items" : [ "IAC-Treiber IAC-Bus 1", ",", "IAC-Treiber IAC-Bus 2", ",", "IAC-Treiber IAC-Bus 3", ",", "IAC-Treiber IAC-Bus 4", ",", "IAC-Treiber IAC-Bus 5", ",", "Ohm64 Control Surface", ",", "Ohm64 External", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "IAC-Treiber IAC-Bus 1", ",", "IAC-Treiber IAC-Bus 2", ",", "IAC-Treiber IAC-Bus 3", ",", "IAC-Treiber IAC-Bus 4", ",", "IAC-Treiber IAC-Bus 5", ",", "to Max 1", ",", "to Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4290,7 +4292,8 @@
 				"box" : 				{
 					"angle" : 0.0,
 					"background" : 1,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"bordercolor" : [ 0.835941, 0.83802, 0.894216, 0.0 ],
 					"id" : "obj-102",
 					"maxclass" : "panel",
 					"mode" : 0,
