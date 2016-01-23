@@ -4985,6 +4985,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-30",
@@ -4995,19 +4996,6 @@
 									"patching_rect" : [ 190.0, 192.0, 50.5, 20.0 ],
 									"style" : "",
 									"text" : "toxine"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "newobj",
-									"numinlets" : 5,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "int", "int", "list" ],
-									"patching_rect" : [ 240.0, 406.0, 61.0, 20.0 ],
-									"style" : "",
-									"text" : "idx"
 								}
 
 							}
@@ -5025,18 +5013,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-67",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 125.0, 663.0, 30.0, 20.0 ],
-									"style" : "",
-									"text" : "print"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-65",
 									"maxclass" : "message",
 									"numinlets" : 2,
@@ -5045,20 +5021,6 @@
 									"patching_rect" : [ 109.5, 585.0, 38.0, 20.0 ],
 									"style" : "",
 									"text" : "set $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"color" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
-									"id" : "obj-7",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "list" ],
-									"patching_rect" : [ 302.5, 568.0, 50.0, 20.0 ],
-									"style" : "",
-									"text" : "listfunnel"
 								}
 
 							}
@@ -5147,7 +5109,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "bang", "int" ],
-									"patching_rect" : [ 237.0, 187.0, 40.0, 20.0 ],
+									"patching_rect" : [ 248.0, 178.0, 40.0, 20.0 ],
 									"style" : "",
 									"text" : "text"
 								}
@@ -7195,15 +7157,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-67", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-47", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-44", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -7621,7 +7574,7 @@
 					"bgfillcolor_type" : "color",
 					"hint" : "Select a virtual MIDI port for controlling Avenue or Arena.",
 					"id" : "obj-15",
-					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber IAC-Bus 1", ",", "IAC-Treiber IAC-Bus 2", ",", "IAC-Treiber IAC-Bus 3", ",", "IAC-Treiber IAC-Bus 4", ",", "IAC-Treiber IAC-Bus 5", ",", "to Max Runtime 1", ",", "to Max Runtime 2", ",", "from Max 1", ",", "from Max 2" ],
+					"items" : [ "AU DLS Synth 1", ",", "IAC-Treiber IAC-Bus 1", ",", "IAC-Treiber IAC-Bus 2", ",", "IAC-Treiber IAC-Bus 3", ",", "IAC-Treiber IAC-Bus 4", ",", "IAC-Treiber IAC-Bus 5", ",", "from Max 1", ",", "from Max 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -13440,7 +13393,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage",
-									"varname" : "u248001041"
+									"varname" : "u396001041"
 								}
 
 							}
@@ -17262,15 +17215,15 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
+			"obj-37" : [ "gswitch", "gswitch", 0 ],
+			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ],
+			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
 			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
 			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
-			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
-			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
-			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
-			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
-			"obj-37" : [ "gswitch", "gswitch", 0 ],
 			"obj-88" : [ "toggle", "toggle", 0 ],
-			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ]
+			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
+			"obj-38" : [ "gswitch2", "gswitch2", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -17473,10 +17426,6 @@
 			}
 , 			{
 				"name" : "OpenSoundControl.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "idx.mxo",
 				"type" : "iLaX"
 			}
 , 			{
