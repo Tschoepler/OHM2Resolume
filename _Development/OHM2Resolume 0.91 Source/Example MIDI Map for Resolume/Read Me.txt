@@ -1,5 +1,0 @@
-Open the file OHM64.xml inside of Resolume Avenue/Arena via
-
-> preferences > midi > load…
-
-This is just a sample to get you started. You can remap the buttons to your likes. Although there are some specific buttons – such as the BPM tap-button – which are hard-coded for now. I'll implement some basic MIDI mapping feature sooner or later.
