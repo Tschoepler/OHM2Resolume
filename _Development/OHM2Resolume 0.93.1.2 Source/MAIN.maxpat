@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 507.0, 313.0 ],
+		"rect" : [ 34.0, 78.0, 652.0, 783.0 ],
 		"openrect" : [ 0.0, 0.0, 507.0, 313.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
@@ -73,7 +73,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 376.0, 229.0, 1030.0, 565.0 ],
+						"rect" : [ 754.0, 78.0, 652.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -100,6 +100,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -132,7 +133,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 697.0, 231.0, 439.0, 565.0 ],
+										"rect" : [ 388.0, 215.0, 439.0, 565.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 10.0,
@@ -1853,7 +1854,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 251.0, 515.0, 526.0, 22.0 ],
 									"style" : "",
-									"text" : "\"      <clip uniqueId=\\\"21489740\\\" layerIndex=\\\"2\\\" trackIndex=\\\"3\\\">\""
+									"text" : "\"      <clip uniqueId=\\\"2456737\\\" layerIndex=\\\"1\\\" trackIndex=\\\"1\\\">\""
 								}
 
 							}
@@ -2181,6 +2182,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-40", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2404,7 +2414,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 940.125, 401.0, 93.0, 20.0 ],
-					"restore" : [ 0 ],
+					"restore" : [ 7 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -10891,7 +10901,6 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-5",
-													"int" : 1,
 													"maxclass" : "gswitch",
 													"numinlets" : 3,
 													"numoutlets" : 1,
@@ -11941,7 +11950,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage",
-									"varname" : "u216004609"
+									"varname" : "u331001073"
 								}
 
 							}
@@ -15772,15 +15781,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
-			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
-			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
 			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
-			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ],
-			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
-			"obj-88" : [ "toggle", "toggle", 0 ],
 			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
-			"obj-37" : [ "gswitch", "gswitch", 0 ]
+			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ],
+			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
+			"obj-88" : [ "toggle", "toggle", 0 ],
+			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
+			"obj-37" : [ "gswitch", "gswitch", 0 ],
+			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
+			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -15973,12 +15982,6 @@
 				"name" : "ohm_reload.png",
 				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lastOpenedComp",
-				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
