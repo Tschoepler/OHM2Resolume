@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 709.0, 783.0 ],
+		"rect" : [ 34.0, 79.0, 507.0, 313.0 ],
 		"openrect" : [ 0.0, 0.0, 507.0, 313.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
@@ -41,12 +41,13 @@
 		"title" : "OHM2Resolume 0.93.1.2 MAX7",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.4, 1.0, 0.8, 1.0 ],
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 979.0, 305.0, 77.0, 20.0 ],
+					"patching_rect" : [ 983.125, 302.0, 77.0, 20.0 ],
 					"style" : "",
 					"text" : "r setDropDown"
 				}
@@ -211,6 +212,7 @@
 											}
 , 											{
 												"box" : 												{
+													"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 													"id" : "obj-4",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -1851,7 +1853,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 251.0, 515.0, 526.0, 22.0 ],
 									"style" : "",
-									"text" : "</composition>"
+									"text" : "\"      <clip uniqueId=\\\"21489740\\\" layerIndex=\\\"2\\\" trackIndex=\\\"3\\\">\""
 								}
 
 							}
@@ -2423,20 +2425,6 @@
 					"patching_rect" : [ 1276.0, 497.0, 43.0, 20.0 ],
 					"style" : "",
 					"text" : "del 500"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"id" : "obj-103",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 641.0, 561.0, 30.0, 20.0 ],
-					"style" : "",
-					"text" : "print"
 				}
 
 			}
@@ -5690,7 +5678,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 800.0, 448.0, 640.0, 480.0 ],
+						"rect" : [ 766.0, 448.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 10.0,
@@ -5738,7 +5726,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 77.0, 100.0, 59.0, 20.0 ],
+									"patching_rect" : [ 77.0, 100.0, 59.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "li.UI.js",
 										"parameter_enable" : 0
@@ -5842,7 +5830,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 504.0, 283.0, 70.0, 25.0 ],
 					"style" : "",
-					"text" : "btn 54 0",
+					"text" : "btn 73 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -11953,7 +11941,7 @@
 ,
 									"style" : "",
 									"text" : "pattrstorage",
-									"varname" : "u734006226"
+									"varname" : "u216004609"
 								}
 
 							}
@@ -15784,15 +15772,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
-			"obj-88" : [ "toggle", "toggle", 0 ],
-			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
-			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ],
-			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
-			"obj-37" : [ "gswitch", "gswitch", 0 ],
-			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
 			"obj-64::obj-21" : [ "gswitch2[1]", "gswitch2[1]", 0 ],
-			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ]
+			"obj-49::obj-19::obj-12" : [ "gswitch1", "gswitch1", 0 ],
+			"obj-38" : [ "gswitch2", "gswitch2", 0 ],
+			"obj-64::obj-22" : [ "gswitch2[2]", "gswitch2[2]", 0 ],
+			"obj-43" : [ "gswitch2[4]", "gswitch2", 0 ],
+			"obj-49::obj-19::obj-22" : [ "gswitch2[3]", "gswitch2[1]", 0 ],
+			"obj-88" : [ "toggle", "toggle", 0 ],
+			"obj-49::obj-5::obj-14" : [ "gswitch1[1]", "gswitch1[1]", 0 ],
+			"obj-37" : [ "gswitch", "gswitch", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -15985,6 +15973,18 @@
 				"name" : "ohm_reload.png",
 				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
 				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lastOpenedComp",
+				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lastOpenedCompPath",
+				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

@@ -128,7 +128,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 355.0, 66.0, 19.0 ],
+					"patching_rect" : [ 360.0, 340.0, 66.0, 19.0 ],
 					"style" : "",
 					"text" : "print NextCTL"
 				}
@@ -143,7 +143,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 375.0, 321.0, 135.0, 29.0 ],
+					"patching_rect" : [ 375.0, 310.0, 135.0, 29.0 ],
 					"style" : "",
 					"text" : "if no controller is found, let's try the next model"
 				}
@@ -264,7 +264,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 160.0, 60.0, 48.0, 19.0 ],
+									"patching_rect" : [ 160.0, 60.0, 48.0, 15.0 ],
 									"style" : "",
 									"text" : "product 3"
 								}
@@ -293,7 +293,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 105.0, 60.0, 54.0, 19.0 ],
+									"patching_rect" : [ 105.0, 60.0, 54.0, 17.0 ],
 									"style" : "",
 									"text" : "route bang"
 								}
@@ -320,7 +320,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 95.0, 195.0, 43.0, 19.0 ],
+									"patching_rect" : [ 95.0, 195.0, 43.0, 17.0 ],
 									"style" : "",
 									"text" : "midiout"
 								}
@@ -335,7 +335,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 15.0, 241.0, 20.0, 19.0 ],
+									"patching_rect" : [ 15.0, 241.0, 20.0, 17.0 ],
 									"style" : "",
 									"text" : "t b"
 								}
@@ -361,7 +361,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 26.0, 222.0, 82.0, 19.0 ],
+									"patching_rect" : [ 26.0, 222.0, 82.0, 17.0 ],
 									"style" : "",
 									"text" : "print SETUP_RX"
 								}
@@ -376,7 +376,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 83.0, 61.0, 19.0 ],
+									"patching_rect" : [ 15.0, 83.0, 61.0, 17.0 ],
 									"style" : "",
 									"text" : "pipe 20000"
 								}
@@ -391,7 +391,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 68.0, 129.0, 83.0, 19.0 ],
+									"patching_rect" : [ 68.0, 129.0, 83.0, 15.0 ],
 									"style" : "",
 									"text" : "request_setup 1"
 								}
@@ -406,7 +406,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 15.0, 170.0, 70.0, 19.0 ],
+									"patching_rect" : [ 15.0, 170.0, 70.0, 17.0 ],
 									"saved_object_attributes" : 									{
 										"filename" : "li.getsetup.js",
 										"parameter_enable" : 0
@@ -426,7 +426,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 15.0, 138.0, 37.0, 19.0 ],
+									"patching_rect" : [ 15.0, 138.0, 37.0, 17.0 ],
 									"style" : "",
 									"text" : "midiin"
 								}
@@ -441,7 +441,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 15.0, 109.0, 53.0, 19.0 ],
+									"patching_rect" : [ 15.0, 109.0, 53.0, 15.0 ],
 									"style" : "",
 									"text" : "enable $1"
 								}
@@ -456,7 +456,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "bang", "int", "" ],
-									"patching_rect" : [ 15.0, 60.0, 53.0, 19.0 ],
+									"patching_rect" : [ 15.0, 60.0, 53.0, 17.0 ],
 									"style" : "",
 									"text" : "t 0 b 1 l"
 								}
@@ -471,7 +471,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 15.0, 199.0, 71.0, 19.0 ],
+									"patching_rect" : [ 15.0, 199.0, 71.0, 17.0 ],
 									"style" : "",
 									"text" : "route request"
 								}
@@ -1387,7 +1387,21 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "findLivid.js",
+				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "li.getsetup.js",
+				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
