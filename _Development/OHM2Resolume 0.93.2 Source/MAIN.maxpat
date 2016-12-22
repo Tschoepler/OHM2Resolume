@@ -38,7 +38,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"title" : "OHM2Resolume 0.93.1.2 MAX7",
+		"title" : "OHM2Resolume 0.93.2",
 		"boxes" : [ 			{
 				"box" : 				{
 					"color" : [ 0.4, 1.0, 0.8, 1.0 ],
@@ -100,7 +100,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -1854,7 +1853,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 251.0, 515.0, 526.0, 22.0 ],
 									"style" : "",
-									"text" : "\"      <clip uniqueId=\\\"2456737\\\" layerIndex=\\\"1\\\" trackIndex=\\\"1\\\">\""
+									"text" : "</composition>"
 								}
 
 							}
@@ -5840,7 +5839,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 504.0, 283.0, 70.0, 25.0 ],
 					"style" : "",
-					"text" : "btn 73 0",
+					"text" : "cc 6 15",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -9216,6 +9215,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -9242,6 +9242,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-37",
+					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -15982,12 +15983,6 @@
 				"name" : "ohm_reload.png",
 				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lastOpenedCompPath",
-				"bootpath" : "~/Documents/ownCloud/Code/MAXMSP/OHM 64/OHM2Resolume/_Development/OHM2Resolume 0.93.1.2 Source",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

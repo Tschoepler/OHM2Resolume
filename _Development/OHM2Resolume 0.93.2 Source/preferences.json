@@ -9,8 +9,8 @@
 					"MIDIout" : [ "from Max 1" ],
 					"AutoselectLayer" : [ 1 ],
 					"OSC_in" : [ 7001 ],
-					"LoadedComp" : [ 0 ],
-					"trigger::u216004609" : [ -1 ]
+					"LoadedComp" : [ 7 ],
+					"trigger::u331001073" : [ -1 ]
 				}
 
 			}
