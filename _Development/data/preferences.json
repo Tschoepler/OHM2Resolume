@@ -1,0 +1,22 @@
+{
+	"pattrstorage" : 	{
+		"name" : "preferences",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"dashCorrect" : [ 0 ],
+					"MIDIout" : [ "from Max 1" ],
+					"AutoselectLayer" : [ 1 ],
+					"OSC_in" : [ 7001 ],
+					"LoadedComp" : [ 7 ],
+					"trigger::u732002789" : [ -1 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
