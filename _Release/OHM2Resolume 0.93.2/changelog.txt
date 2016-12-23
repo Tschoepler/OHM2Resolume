@@ -1,0 +1,14 @@
+OHM2Resolume v0.93.2
+
+New: Pressing „Clear layer“ in Resolume now stops button-blinking
+New: ohmrgb_colors.js
+
+Updated: li.UI.js, li.getsetup.js, findLivid.js
+
+Fixed: Selecting a comp from the dropdown menu would crash MAX or not load the comp
+Fixed: Set dropdown composition menu when opening a file via “read” button
+Fixed: some clips are not highlighted on OHM64 (buttons don’t light up but blink when triggered)
+Fixed: "OTUDP: Failed to process entire packet (200 of 204)” when OSC packages is activated
+Fixed: "#N: extra arguments for message „s“”
+Fixed: Sequencer starts to run when Arena is loaded > Bug in Resolume Arena which triggers “pause” twice when loaded
+Fixed: "Stack Overflow” on big compositions
