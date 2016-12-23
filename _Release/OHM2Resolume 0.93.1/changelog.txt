@@ -1,20 +1,13 @@
-OHM2Resolume v0.91
+OHM2Resolume v0.93.1
 
-New: changed logo from zweifarbton to tschoepler
-New: updated some mouse-over hints
-New: added drop-down menu to select compositions from last opened folder
-New: added a button next to the „read“ button, to quickly reload the current comp. Good for making changes available to the button matrix, after making changes in Resolume Arena/Avenue and saving the resaving the comp.
+New: Added fine grained +/- BPM control on "10/Shift/Button5–8"
+New: Last opened composition is selected in drop-down menu after startup
 
-Change: minor design changes on UI elements and the size of the patcher window (smaller).
-Change: Sequencer listens to BPM changes and resync made from within Resolume
-Change: Minor changes on MIDI Mapping (xml/jpeg)
+Fixed: A resync pauses blinking of the buttons
+Fixed: Sometimes MIDI out needs to be set again after opening OHM2Resolume to make the patch send MIDI/OSC
+Fixed: OHM2Resolume resets BPM of Arena on startup. Should be the other way around.
 
-Bugfix: Resolume sends BPM changes, resync and pause to OHM2Resolume via OSC
-Bugfix: change port and ip of OSC-connection
-Bugfix: buffer exceeds when recording with sequencer
-Bugfix: Fixed link in help section to „Dashboard correct“
-Bugfix: patcher would light up buttons but not pass MIDI from OHM64
-Bugfix: broken link in help panel
-Bugfix: Triggering buttons on the GUI were sent out to the patch twice, resulting in overhead.
-
-Clean up: Improved some unnecessary code
+Change: MAX 7.1 compatible
+Change: Replaced a couple of 3rd party objects with objects that already ship with MAX/MSP
+Change: Cleaned up the sequencer GUI a little
+Change: BPM non editable from OHM2Resolume anymore. Everything is synced via OSC from Arena as master.
