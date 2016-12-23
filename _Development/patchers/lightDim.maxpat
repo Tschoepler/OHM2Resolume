@@ -45,9 +45,9 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 71.0, 79.0, 86.0, 18.0 ],
+					"patching_rect" : [ 71.0, 79.0, 80.0, 20.0 ],
 					"style" : "",
-					"text" : "counter 2 60 100"
+					"text" : "counter 2 0 127"
 				}
 
 			}
@@ -60,7 +60,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 71.0, 55.0, 50.0, 18.0 ],
+					"patching_rect" : [ 71.0, 55.0, 50.0, 20.0 ],
 					"style" : "",
 					"text" : "metro 10"
 				}
@@ -75,7 +75,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 103.0, 192.0, 52.0, 18.0 ],
+					"patching_rect" : [ 103.0, 192.0, 52.0, 20.0 ],
 					"style" : "",
 					"text" : "r channel"
 				}
@@ -90,7 +90,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 192.0, 34.0, 18.0 ],
+					"patching_rect" : [ 35.0, 192.0, 34.0, 20.0 ],
 					"style" : "",
 					"text" : "r port"
 				}
@@ -138,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 71.0, 163.0, 35.0, 17.0 ],
+					"patching_rect" : [ 71.0, 163.0, 30.0, 19.0 ],
 					"style" : "",
 					"text" : "t i 27"
 				}
@@ -152,7 +152,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.0, 228.0, 51.0, 17.0 ],
+					"patching_rect" : [ 71.0, 228.0, 51.0, 19.0 ],
 					"style" : "",
 					"text" : "ctlout"
 				}
@@ -168,7 +168,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.0, 29.0, 150.0, 18.0 ],
+					"patching_rect" : [ 71.0, 29.0, 150.0, 20.0 ],
 					"style" : ""
 				}
 
