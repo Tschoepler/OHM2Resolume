@@ -55,12 +55,37 @@ var proceed = 0;
 var sxi=0;
 var isreply=0; //marker to check if this is a reply to the inquiry.
 var enable = 0;
-var tout = new Task(timeout, this); 
-var products = ["-","Brain","Ohm64","block","Code"]
+var tout = new Task(timeout, this);
+var timedport = new Task(tryport, this); 
+var products = ["-","Brain","Ohm64","block","Code","MCDAW","-","OhmRGB","CNTRLR","BrainV2","-","Alias8","Base","Brain Jr."]
 var begin;
 
+var loopmax = 1;
+var loopcount = 0;
+
+function pid(v){
+	productid=v;
+}
+function mf(v){
+	mfg=v;
+}
+function names(){
+	var a = arrayfromargs(arguments);
+	products = a.slice(0);
+}
+function response(){
+	var a = arrayfromargs(arguments);
+	tomatch = a.slice(0);
+}
+function call(){
+	var a = arrayfromargs(arguments);
+	inquiry = a.slice(0);
+}
+
 function bang(){
+	post("\n....FINDING",products[productid]);
     enable = 1;
+    loopcount = 0;
     portincr = 0;
     proceed = 0;
     ch = 1;
@@ -71,7 +96,7 @@ function bang(){
     onport = "";
     tryport(0);
 }
-
+/*
 function timeout(){
     portincr++;
     post("\n**timeout",portincr);
@@ -84,6 +109,27 @@ function timeout(){
         outlet(0,"tomidiout","enable",0);
     }
 }
+*/
+function timeout(){
+    portincr++;
+    post("\ntimeout<<<<<<",portincr);
+    if(portincr<ports.length && enable){
+        //post("\nNext...",ports[portincr]);
+        tryport(portincr);
+    }else if(loopcount<loopmax){ //just because we didn't find it the first time doesn't mean it's not there, so let's cycle thru the ports again, up to loopmax times.
+    	portincr = 0;
+    	timedport.arguments=portincr;
+    	timedport.schedule(100);
+    	//tryport(portincr);
+    	loopcount++;
+    	post("\n--------------Let's try this seek again, shall we?",loopcount);
+    }else {
+        if(enable) outlet(0,"fail",productid);        
+        outlet(0,"tomidiin","enable",0);
+        outlet(0,"tomidiout","enable",0);
+    }
+}
+
 
 function tryport(v){
     post("\ntrying port",v,"of",ports.length-1,":",ports[v]);
@@ -128,10 +174,11 @@ function msg_int(b){ //sysex in
         } 
         if(b==247){ //eos byte
             begin = 0;
-            post("\nend of sysex string",reply.length == tomatch.length,proceed);
+            //post("\nend of sysex string",reply.length == tomatch.length,proceed);
             if(reply.length == tomatch.length && proceed){ //we know it's a match because proceed is still "1"
-                post("\nfound", products[productid], "on ch",ch,"on port",onport);
+                post("\n>>>>>>FOUND", products[productid], "on ch",ch,"on port",onport);
                 enable = 0;
+                loopcount=loopmax;
                 outlet(0,"version",reply[15],reply[14],reply[13],reply[12]);
                 outlet(0,"port",onport);
                 outlet(0,"ch",ch+1);
@@ -142,16 +189,16 @@ function msg_int(b){ //sysex in
                 if(portincr<ports.length){
                         //portincr++;
                         //tryport(portincr);
-                        post("\nend of sysex msg, moving on",portincr);
+                        post("\nend of sysex msg, moving on to port",portincr);
                 }
             }
         }
         if(begin){ //accum items into an array
             reply[sxi] = b;
             if(proceed){
-                post("should we check?",sxi!=2 &&  sxi!=12 && sxi!=13 && sxi!=14 && sxi!=15);
+                //post("should we check?",sxi!=2 &&  sxi!=12 && sxi!=13 && sxi!=14 && sxi!=15);
                 if(sxi!=2 &&  sxi!=12 && sxi!=13 && sxi!=14 && sxi!=15){ //don't care about matching ch, ID, or version
-                    post("checking",sxi);
+                    //post("checking",sxi);
                     if(reply[sxi] == tomatch[sxi]){
                         proceed = 1;
                         //post("*pr",proceed,reply[sxi],tomatch[sxi],reply[sxi] == tomatch[sxi],",");
@@ -165,9 +212,9 @@ function msg_int(b){ //sysex in
                 if(sxi==4 && proceed==1){ //at this point, if proceed is still "1", we can be sure this is a reply to an Inquiry Request message.  We just don't yet know if it's OUR reply, though.
                     isreply=1
                 }*/
-                //post("sxin",sxi,"r-",reply[sxi],"m-",tomatch[sxi],"p?",proceed,"//");
+                //post("sxin",sxi,"r-",reply[sxi],"m-",tomatch[sxi],"p?",proceed,"\n");
                 if(sxi==4 && proceed==0){ // at this point, we know it's not a sysex Inquiry Reply, so let's just move on.
-                    post("\n not an inq. reply on",ports[portincr],"waiting for next port");
+                    //post("\n not an inq. reply on",ports[portincr],"waiting for next port");
                     //isreply = 0
                     begin = 0;
                     proceed = 0;
@@ -192,5 +239,5 @@ function product(v,man){
     productid = v;
     if(man) mfg=man;
     tomatch = [240,126,ch,6,2,0,1,mfg,1,0,productid,0,v1,v2,v3,v4];
-    post("\nsearching for",products[productid]);
+    post("\n........searching for",productid,products[productid]);
 }

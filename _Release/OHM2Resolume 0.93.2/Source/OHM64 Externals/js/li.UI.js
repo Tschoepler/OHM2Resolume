@@ -49,6 +49,9 @@ var ohmchannel=1;
 ctls = new Array(); 
 assigned = new Object();
 
+var currentbank = 0;
+var	bankchs = [1,2,3,4];
+
 /* 
 ----------------------------------------------
 "assigned" is an array of objects that links MIDI assignments to each button, slider, or knob 
@@ -134,7 +137,7 @@ function msg_int(v){
             if (counter==2) {
                 midimatch(midichunk[0],midichunk[1],midichunk[2]);
                 //all notes off messages use CC# 123
-                if(midichunk[1]==123 && midichunk[2]==0) allnotesoff();
+                //if(midichunk[1]==123 && midichunk[2]==0) allnotesoff();
             }
             counter++;
         break;
@@ -171,11 +174,12 @@ function msg_int(v){
 function midimatch(){ //header,number,value
     var toctl=0;
     var midiin = arrayfromargs(arguments);
+    //post("\nmidimatch",midiin);
     if (midiin.length==3){
         toctl = parseInt(assigned[midiin[0]][midiin[1]]); //button ID is assigned here.
         if(shifted[toctl]) 
             toctl = toctl+shiftoffset;
-        if(DEBUG) post("\nto match",midiin,"toctl",toctl);
+        if(DEBUG) post("\nto match",midiin,"toctl",toctl,midiin[2]); 
         if(toctl>=0) {
             control(toctl,midiin[2]);
         }
@@ -209,111 +213,118 @@ function control(b,v){ //b=control ID (0-127 are buttons, 128-256 are analogs), 
             var max = allparams[pattrname].max;
             if(DEBUG) post("\n button ctl",pattrname,v,dotog,min,max);
             switch(dotog){
-				case 0:
-					if(DEBUG) post("\n momentary button",b);
-					var vbool=v>0; //turn it into 0 or 1, rather than 0,64
-					var scaledv = (vbool*max)+((1-vbool)*min); //returns min if vbool is 0, returns max if vbool is 1
-					repeatcheck[0] = b;
-					repeatcheck[1] = vbool;
-					shifter(b,v);
-				   if(midiout){
-						//output midi
-						lcc = ctls[b].num;
-						ltype = ctls[b].mtype;
-						lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
-						outlet(2,lhead,lcc,v);
-					}
-					outlet(1,pattrname,scaledv);//send the name and value to pattrstorage
-					 //send basic info to patch
-					 if(shifted[b-shiftoffset]) {
-						outlet(0,"btn",b-shiftoffset,v);
-					}else{
-						outlet(0,"btn",b,v);
-					}
-					//if there is a momentary button affecting the same parameter as a toggle, we need to accomodate that:
-					if(allparams[pattrname].option && v==0){
-						var tmpb = allparams[pattrname].id;
-						allparams[tmpb].togstate = 0;
-					}
-				break;
-				
-				case 1: //toggle action
-					if(v){
-						if(DEBUG) post("\n toggle button",b,allparams[pattrname].togstate);
-						allparams[pattrname].togstate = 1-allparams[pattrname].togstate;
-						var vbool = allparams[pattrname].togstate;
-						var togval = (vbool*max)+((1-vbool)*min); //returns min if vbool is 0, returns max if vbool is 1
-						repeatcheck[0] = b;
-						repeatcheck[1] = togval;                    
-						post("\n setrepeat-tog",repeatcheck[0],repeatcheck[1],allparams[pattrname].togstate);
-						shifter(b,togval);
-						var ingroup=0;
-						var groupnum = 0;
-						for (var j=0;j<bgroup.ids.length;j++){
-							ingroup = (b==bgroup.ids[j]);
-							if(ingroup) {
-								groupnum = j+1;
-								j=bgroup.ids.length; //stop the loop, we're done here
-							}
-						}
-						if(bgroup.onoff && ingroup){ //use a range of buttons as dependent toggles
-							//post("\ngroup action");
-							for (var i = 0;i<bgroup.ids.length;i++){
-								var bid = bgroup.ids[i];
-								//post("\nloop",i,"-",b,bid);
-								if(bid!=b) {
-								//only set and output togstates for the others in the group, not the one just pressed. That comes after the loop!
-									allparams[allparams[bid].name].togstate=0; 
-									if(midiout){
-										//output midi
-										lcc = ctls[bid].num;
-										ltype = ctls[bid].mtype;
-										lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
-										outlet(2,lhead,lcc,0);
-									}
-									outlet(1,allparams[bid].name,0);
-									outlet(0,"btn",bid,0);
-								}
-							}
-							outlet(0,"group",groupnum);
-						}
-						if(midiout){
-						//output midi
-							lcc = ctls[b].num;
-							ltype = ctls[b].mtype;
-							lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
-							outlet(2,lhead,lcc,togval*64);
-						}
-						outlet(1,pattrname,togval);//send the name and value to pattrstorage
-						outlet(0,"btn",b,togval); //send generic btn info to patch
-					}
-				break;
-				
-				case 2:		
-					if(v){
-						if(DEBUG) post("\nmessage only:",b,pattrname,v,dotog,min,max);
-						repeatcheck[0] = b;
-						repeatcheck[1] = vbool;
-						shifter(b,v);
-						/*
-					   if(midiout){
-							//output midi
-							lcc = ctls[b].num;
-							ltype = ctls[b].mtype;
-							lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
-							outlet(2,lhead,lcc,v);
-						}
-						*/
-						outlet(1,pattrname);//output only the message
-						 //send basic info to patch
-						 if(shifted[b-shiftoffset]) {
-							outlet(0,"btn",b-shiftoffset);
-						}else{
-							outlet(0,"btn",b,v);
-						}
-					}
-				break;
-		}
+                case 0:
+                    if(DEBUG) post("\n momentary button",b);
+                    var vbool=v>0; //turn it into 0 or 1, rather than 0,64
+                    var scaledv = (vbool*max)+((1-vbool)*min); //returns min if vbool is 0, returns max if vbool is 1
+                    repeatcheck[0] = b;
+                    repeatcheck[1] = vbool;
+                    shifter(b,v);
+                   if(midiout){
+                        //output midi
+                        lcc = ctls[b].num;
+                        ltype = ctls[b].mtype;
+                        lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
+                        outlet(2,lhead,lcc,v);
+                    }
+                    outlet(1,pattrname,scaledv);//send the name and value to pattrstorage
+                     //send basic info to patch
+                     if(shifted[b-shiftoffset]) {
+                        outlet(0,"btn",b-shiftoffset,v);
+                    }else{
+                        outlet(0,"btn",b,v);
+                    }
+                    //if there is a momentary button affecting the same parameter as a toggle, we need to accomodate that:
+                    if(allparams[pattrname].option && v==0){
+                        var tmpb = allparams[pattrname].id;
+                        allparams[tmpb].togstate = 0;
+                    }
+                break;
+                
+                case 1: //toggle action
+                    if(v){
+                        if(DEBUG) post("\n toggle button",b,allparams[pattrname].togstate);
+                        allparams[pattrname].togstate = 1-allparams[pattrname].togstate;
+                        var vbool = allparams[pattrname].togstate;
+                        var togval = (vbool*max)+((1-vbool)*min); //returns min if vbool is 0, returns max if vbool is 1
+                        repeatcheck[0] = b;
+                        repeatcheck[1] = togval;                    
+                        //post("\n setrepeat-tog",repeatcheck[0],repeatcheck[1],allparams[pattrname].togstate);
+                        shifter(b,togval);
+                        var ingroup=0;
+                        var groupnum = 0;
+                        for (var j=0;j<bgroup.ids.length;j++){
+                            ingroup = (b==bgroup.ids[j]);
+                            if(ingroup) {
+                                groupnum = j+1;
+                                j=bgroup.ids.length; //stop the loop, we're done here
+                            }
+                        }
+                        if(bgroup.onoff && ingroup){ //use a range of buttons as dependent toggles
+                            //post("\ngroup action");
+                            for (var i = 0;i<bgroup.ids.length;i++){
+                                var bid = bgroup.ids[i];
+                                //post("\nloop",i,"-",b,bid);
+                                if(bid!=b) {
+                                //only set and output togstates for the others in the group, not the one just pressed. That comes after the loop!
+                                    allparams[allparams[bid].name].togstate=0; 
+                                    if(midiout){
+                                        //output midi
+                                        lcc = ctls[bid].num;
+                                        ltype = ctls[bid].mtype;
+                                        lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
+                                        outlet(2,lhead,lcc,0);
+                                    }
+                                    outlet(1,allparams[bid].name,0);
+                                    outlet(0,"btn",bid,0);
+                                }
+                            }
+                            outlet(0,"group",groupnum);
+                        }
+                        if(midiout){
+                        //output midi
+                            lcc = ctls[b].num;
+                            ltype = ctls[b].mtype;
+                            lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
+                            outlet(2,lhead,lcc,togval*64);
+                        }
+                        outlet(1,pattrname,togval);//send the name and value to pattrstorage
+                        outlet(0,"btn",b,togval); //send generic btn info to patch
+                    }
+                break;
+                
+                case 2:        
+                    if(v){
+                        if(DEBUG) post("\nmessage only:",b,pattrname,v,dotog,min,max);
+                        repeatcheck[0] = b;
+                        repeatcheck[1] = vbool;
+                        shifter(b,v);
+                        /*
+                       if(midiout){
+                            //output midi
+                            lcc = ctls[b].num;
+                            ltype = ctls[b].mtype;
+                            lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
+                            outlet(2,lhead,lcc,v);
+                        }
+                        */
+                        var split = pattrname.split(" "); //split into an array divided by spaces
+                        for (var i in split){
+                            //convert each element into an integer, and test if it really is an int.
+                            var test = parseFloat(split[i]); 
+                            //if it is an integer, then make that element of the array the int., rather than the symbol of the int.
+                            if(!isNaN(test)) split[i] = test;
+                        }
+                        outlet(1,split);//output only the message
+                         //send basic info to patch
+                         if(shifted[b-shiftoffset]) {
+                            outlet(0,"btn",b-shiftoffset);
+                        }else{
+                            outlet(0,"btn",b,v);
+                        }
+                    }
+                break;
+        }
             
         }else{ //ANALOG CTL
             if(DEBUG) post("\n analog ctl",b,v);
@@ -361,14 +372,14 @@ function shifter(b,v){ //b is button/control id, v is velocity or value
             if(DEBUGSH) post("\nmidiout","ID",lid," & ",ctls[lid].mtype," : ",ltype,ohmchannel," - ",lhead,lcc,lval);
             if(ltype){ //pitch bend
                 if(midiout){
-					outlet(2,lhead);
-					outlet(2,lval);
+                    outlet(2,lhead);
+                    outlet(2,lval);
                 }
             }else{ //ccs
-				if(midiout){
-					outlet(2,lhead);
-					outlet(2,lcc);
-					outlet(2,lval);
+                if(midiout){
+                    outlet(2,lhead);
+                    outlet(2,lcc);
+                    outlet(2,lval);
                 }
             }
         }
@@ -425,13 +436,13 @@ function setparamvalue(p,v,nooutput){
             if(isbutton) outlet(0,"btn",cid,scaledv);
             else outlet(0,"cc",cid-127,scaledv);
             if(!midiout){ //remote midi out
-				//output midi
-				lcc = ctls[cid].num;
-				ltype = ctls[cid].mtype;
-				if(!isbutton) ltype = 1; //cid>127 are analogs, usually type 0, so lets just explicitly set that and deal with the buggy problem case of pitchbend later!
-				lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
-				outlet(2,lhead,lcc,scaledv);
-			}
+                //output midi
+                lcc = ctls[cid].num;
+                ltype = ctls[cid].mtype;
+                if(!isbutton) ltype = 1; //cid>127 are analogs, usually type 0, so lets just explicitly set that and deal with the buggy problem case of pitchbend later!
+                lhead = 144+(ohmchannel-1)+(ltype*32); //note or cc
+                outlet(2,lhead,lcc,scaledv);
+            }
         }
         encoder(p,v);
         if(DEBUG) post("\nset togstate",p,allparams[p].togstate);
@@ -448,15 +459,15 @@ function encoder(p,v){
         }
         var scaledv = revscale(v,allparams[p].min,allparams[p].max);
         allparams[p].value = scaledv;
-		outlet(0,"cc",cid-127,scaledv);
-		if(midiout){ //remote midi out
-			//output midi
-			lcc = ctls[cid].num;
-			ltype = ctls[cid].mtype;
-			//cid>127 are analogs or encoders, usually type 0 (cc), so lets just explicitly set that and deal with the buggy problem case of pitchbend some other time!
-			lhead = 176+(ohmchannel-1); //cc
-			outlet(2,lhead,lcc,scaledv);
-		}
+        outlet(0,"cc",cid-127,scaledv);
+        if(midiout){ //remote midi out
+            //output midi
+            lcc = ctls[cid].num;
+            ltype = ctls[cid].mtype;
+            //cid>127 are analogs or encoders, usually type 0 (cc), so lets just explicitly set that and deal with the buggy problem case of pitchbend some other time!
+            lhead = 176+(ohmchannel-1); //cc
+            outlet(2,lhead,lcc,scaledv);
+        }
         if(DEBUG) post("\nmidiout",lhead,lcc,scaledv);
     }    
 }
@@ -490,11 +501,54 @@ function revscale(v,l,h){
 //p is parameter name (that is, the scripting name from pattr), 
 //low and hi are used to scale 0-127 to appropriate values for software), 
 //optional on analogs will curve output to bias sensitivity to lower values, on buttons, non zero defines the button as a toggle.
-function latchparams(v,p,low,hi,optional){  
-	if(allparams[v]){ //need to clear some stuff out if it is there, otherwise setparamvalue() can screw up.
-		var old_name = allparams[v].name;
-		if(allparams[old_name]) allparams[old_name] = null;
-	}
+function latchparams(){  
+    //first, we need to process the arguments
+    var a = arrayfromargs(arguments);
+    var last = a.length-1;
+    var v,p,low,hi,optional;
+    if (a.length>5){ //we have the option of inputting messages not as symbols, but as lists, but you'll need all arguments
+        optional = a[last];
+        hi = a[last-1];
+        low = a[last-2];
+        v = a[0];
+        var parray = new Array();
+        //turn the arbitrary message list into an array, then join into a symbol:
+        for (var i=1;i<last-2;i++){
+            parray[i-1]=a[i]
+        }
+        p = parray.join(" ");
+        outlet(0,p);
+    }else{
+       if(a.length>0) {
+            v = a[0];
+        }
+       if(a.length>1) {
+            p= a[1];
+        }
+       if(a.length>2) {
+            low = a[2];
+        }
+       if(a.length>3) { 
+            hi = a[3];
+        }
+       if(a.length>4) { 
+            optional = a[4];
+        }
+    }
+    if(DEBUG){
+        post("\nv",v);
+        post("\np",p);
+        post("\nlow",low);
+        post("\nhi",hi);
+        post("\noptional",optional);
+    }
+    //done processing arguments.
+    
+    //now let's assigne the arguments so we can turn midi into messages:
+    if(allparams[v]){ //need to clear some stuff out if it is there, otherwise setparamvalue() can screw up.
+        var old_name = allparams[v].name;
+        if(allparams[old_name]) allparams[old_name] = null;
+    }
     var isbutton = 0;
     if(v<128) isbutton = 1;
     //maybe this is weird, but we setup an allparams for both the ID and the parameter name. Trust me, it works :)
@@ -503,22 +557,22 @@ function latchparams(v,p,low,hi,optional){
     if(optional) allparams[v].option = optional;
     else allparams[v].option = 0;
     allparams[v].togstate = 0;
-	
-	allparams[p] = new Object(); //just need something to instantiate the object.
-	allparams[p].id=v;
-	allparams[p].value = -1;
-	if(low) allparams[p].min = low;
-	else allparams[p].min = 0;
-	if(hi) allparams[p].max = hi;
-	else{ //max default value is different for buttons, so let's branch...
-		if(isbutton)
-			allparams[p].max = 1;
-		else
-			allparams[p].max = 127;
-	}
-	if(optional) allparams[p].option = optional;
-	else allparams[p].option = 0;
-	allparams[p].togstate = 0;
+    
+    allparams[p] = new Object(); //just need something to instantiate the object.
+    allparams[p].id=v;
+    allparams[p].value = -1;
+    if(low!=null) allparams[p].min = low;
+    else allparams[p].min = 0;
+    if(hi!=null) allparams[p].max = hi;
+    else{ //max default value is different for buttons, so let's branch...
+        if(isbutton)
+            allparams[p].max = 1;
+        else
+            allparams[p].max = 127;
+    }
+    if(optional) allparams[p].option = optional;
+    else allparams[p].option = 0;
+    allparams[p].togstate = 0;
 //    }
     if(DEBUG) post("\nlatch",allparams[v].name,allparams[p].value,allparams[p].min,allparams[p].max,allparams[p].option);
     
@@ -527,6 +581,7 @@ function latchparams(v,p,low,hi,optional){
 // a control can have a "shifted" parameter. If a button is assigned to shift a control, the shifted parameter needs to have an assignment too. 
 function latchshiftparam(v,p,low,hi,optional){
     var lid = v;
+     if(DEBUG) post("\nsh",lid);
     var sh_id=v+shiftoffset;
     latchparams(sh_id,p,low,hi,optional);
     ctls[sh_id] = new Object;
@@ -542,7 +597,7 @@ function makeshift(){ //for example, define button 5 to act as a shift for knob 
     var a = arrayfromargs(arguments);
     var lid = a[0];
     var shiftthis = a.slice(1);
-    //post("\nshift these",shiftthis);
+    if(DEBUG) post("\nshift these",shiftthis);
     allparams[lid].toshift = shiftthis;
 }
 
@@ -600,6 +655,10 @@ function matrixctls(b,v){
 ///makedefaults() and refresh_assigned() are only used if li.getsetup isn't used. 
 //What they do is populate the ctls and assigned objects with values
 //based on the default settings of the controllers.
+var alg_sysexi=new Array();
+var btn_sysexi=new Array();
+var btn_chmap=new Array();
+var alg_chmap=new Array();
 
 function product(v){
     productid = v;
@@ -626,15 +685,19 @@ function product(v){
     }
     
     if(productid==667){ //APC20
-		btn_sysexi = [53,53,53,53,53,53,53,53,54,54,54,54,54,54,54,54,55,55,55,55,55,55,55,55,56,56,56,56,56,56,56,56,57,57,57,57,57,57,57,57];//if ID's are arranged in rows. that is,counting from top left,then across the row.
+        btn_sysexi = [53,53,53,53,53,53,53,53,54,54,54,54,54,54,54,54,55,55,55,55,55,55,55,55,56,56,56,56,56,56,56,56,57,57,57,57,57,57,57,57];//if ID's are arranged in rows. that is,counting from top left,then across the row.
         alg_sysexi = [0];
         btn_chmap = [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8];
     }
     
     if(productid==668){ //launchpad
-		btn_sysexi = [0,1,8,9,16,17,24,25,2,3,10,11,18,19,26,27,4,5,12,13,20,21,28,29,6,7,14,15,22,23,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44];//if ID's are arranged in rows. that is,counting from top left,then across the row.
+        btn_sysexi = [0,1,8,9,16,17,24,25,2,3,10,11,18,19,26,27,4,5,12,13,20,21,28,29,6,7,14,15,22,23,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44];//if ID's are arranged in rows. that is,counting from top left,then across the row.
         alg_sysexi = [0,4,8,12,16,20,24,28,1,5,9,13,17,21,25,29,2,6,10,14,18,22,26,30,3,7,11,15,19,23,27,31];
         btn_chmap = [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8];
+    }
+     if(productid==7){
+        alg_sysexi = [23,22,15,14,5,7,6,4,24,-1,17,16,9,8,19,18,11,10,21,20,13,12,3,1,0,2];
+        btn_sysexi = [0,8,16,24,32,40,48,56,1,9,17,25,33,41,49,57,2,10,18,26,34,42,50,58,3,11,19,27,35,43,51,59,4,12,20,28,36,44,52,60,5,13,21,29,37,45,53,61,6,14,22,30,38,46,54,62,7,15,23,31,39,47,55,63,64,72,65,73,66,74,67,75,68,76,69,70,71,77,78,79,87];    
     }
     
     makedefaults();
@@ -672,7 +735,7 @@ function makedefaults(){ //sets up all ctl Objects with default values.
     for (i=128;i<ctlend;i++){
         ctls[i] = new Object;
         ctls[i].face = theface;
-        //	****check this -SHOULDN'T IT BE 128???? DOES THIS EVEN WORK?****	
+        //    ****check this -SHOULDN'T IT BE 128???? DOES THIS EVEN WORK?****    
         ctls[i].num = alg_sysexi[i-127]; //midi out assignment
         ctls[i].mtype = 0; //default is note for btn, control for slider/knob
         ctls[i].numin = 0; //dummy midi in assignments for LED ctl, for sake of file storage format :( JSON would be better!
@@ -700,6 +763,12 @@ function makedefaults(){ //sets up all ctl Objects with default values.
         forstart = 128; 
         ctlcount = 32;
         theface = 3; //encoders for code
+        forend = forstart + ctlcount;
+    }
+    if(productid == 7) {
+        forstart = 138; //skip 137 on the ohm for stupid reasons
+        ctlcount = 16;
+        theface = 2; //knobs for ohm64
         forend = forstart + ctlcount;
     }
     for (i=forstart;i<forend;i++){ 
@@ -797,11 +866,11 @@ function refresh_assigned(){
                 mvalue = ctls[ctlid].num;
                 type = ctls[ctlid].mtype;
                 if(ctls[ctlid].ch){ //non zero
-					ch = ctls[ctlid].ch;
-				}else{
-					ch = ohmchannel;
-				}
-				choffset = ch-1;
+                    ch = ctls[ctlid].ch;
+                }else{
+                    ch = ohmchannel;
+                }
+                choffset = ch-1;
                 //post("\n?",ctlid,mvalue,type);
                 if(ctlid>=0 && ctlid<128){ 
                     ctls[ctlid].face = 0; //button
@@ -823,10 +892,48 @@ function refresh_assigned(){
                 //post("\nassigned-refresh",head,mvalue,"-",assigned[head][mvalue],"ctlid",ctlid);
             }
         }
+    break;    
+    case 7:    //ohmRGB
+		for (ctlid = 0;ctlid<154;ctlid++){
+			var head,mvalue,type;
+			if(ctls[ctlid]){
+				mvalue = ctls[ctlid].num;
+				type = ctls[ctlid].mtype;
+				if(ctls[ctlid].ch){ //non zero
+					ch = ctls[ctlid].ch;
+				}else{
+					ch = bankchs[currentbank]+1;
+				}
+				//post("\n?",ctlid,mvalue,type);
+				if(ctlid>=0 && ctlid<128){ 
+					ctls[ctlid].face = 0; //button
+					if (type==0) head = 144+choffset; //note
+					if (type==1) head = 176+choffset; //cc
+				}
+				if(ctlid>=128 &&ctlid<137){
+					ctls[ctlid].face = 1; //slider
+					if (type==0) head = 176+choffset; //cc
+					if (type==1 && mvalue<32) head = 176+choffset; //hi res cc
+					if (type==1 && mvalue>=96) head = 224+choffset; //bend
+				}
+				if(ctlid>=137){ 
+					ctls[ctlid].face = 2; //knob
+					if (type==0) head = 176; //cc
+					if (type==1 && mvalue<32) head = 176+choffset; //hi res cc
+					if (type==1 && mvalue>=96) head = 224+choffset; //bend
+				}
+				//now we have to create/populate the "assigned" array so we can decode the ID from incoming MIDI.
+				//if there's nothing at the midiheader index of the "assigned" Object, then we need to initialize it as an array...
+				if(!assigned[head]) { 
+					assigned[head] = new Array();
+				}
+				assigned[head][mvalue] = [ctlid];
+				//post("\nassigned-refresh",head,mvalue,"-",assigned[head][mvalue],"ctlid",ctlid);
+			}
+		}
     break;
-    
     }
-    post("\nassigned array refreshed");
+    post("\nassigned array refreshed",productid);
 }
 
 
